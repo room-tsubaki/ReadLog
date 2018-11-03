@@ -1,4 +1,15 @@
 Rails.application.routes.draw do
+
+  get 'accounts/admin' => 'accounts#admin'
+  get 'accounts/new' => 'accounts#new'
+  get 'accounts/login' => 'accounts#login'
+
+  get 'posts/edit' => 'posts#edit'
+  get 'posts/index' => 'posts#index'
+  get 'posts/new' => 'posts#new'
+
+  get '/' => 'home#top'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
