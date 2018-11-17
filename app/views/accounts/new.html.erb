@@ -1,0 +1,70 @@
+<!-- フォーム部分 -->
+<form class="form-horizontal" role="form" action="/Account/Register" method="post" novalidate="novalidate">
+  <input name="__RequestVerificationToken" type="hidden" value="prXfel...">
+
+  <h4>新しいアカウントを作成します。</h4>
+  <hr>
+
+  <div class="validation-summary-valid" data-valmsg-summary="true">
+    <ul>
+      <li style="display: none;"></li>
+    </ul>
+  </div>
+
+  <!-- (1)ユーザー名 -->
+  <div class="form-group">
+    <label class="col-md-2 control-label" for="UserName">ユーザー名</label>
+
+    <div class="col-md-10">
+      <input name="UserName"
+         class="form-control valid"
+         id="UserName"
+         type="text"
+         value=""
+         data-val-required="ユーザー名 フィールドが必要です。"
+         data-val="true">
+    </div>
+  </div>
+
+  <!-- (2)パスワード -->
+  <div class="form-group">
+    <label class="col-md-2 control-label" for="Password">パスワード</label>
+
+    <div class="col-md-10">
+      <input name="Password"
+         class="form-control
+         input-validation-error"
+         id="Password"
+         type="password"
+         data-val-required="パスワード フィールドが必要です。"
+         data-val="true"
+         data-val-length-min="6"
+         data-val-length-max="100"
+         data-val-length="パスワード の長さは、6 文字以上である必要があります。">
+    </div>
+  </div>
+
+  <!-- (3)パスワードの確認 -->
+  <div class="form-group">
+    <label class="col-md-2 control-label" for="ConfirmPassword">パスワードの確認入力</label>
+
+    <div class="col-md-10">
+      <input name="ConfirmPassword"
+         class="form-control input-validation-error"
+         id="ConfirmPassword"
+         type="password"
+         data-val="true"
+         data-val-equalto-other="*.Password"
+         data-val-equalto="'パスワードの確認入力' と 'パスワード' が一致しません。">
+    </div>
+
+  </div>
+
+  <!-- (4)登録ボタン -->
+  <div class="form-group">
+    <div class="col-md-offset-2 col-md-10">
+      <input class="btn btn-default" type="submit" value="登録">
+    </div>
+  </div>
+
+</form>
