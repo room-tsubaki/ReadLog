@@ -1,3 +1,44 @@
+<form class="form-horizontal" role="form" action="/Account/Register" method="post" novalidate="novalidate">
+  <input name="__RequestVerificationToken" type="hidden" value="prXfel...">
 
-<h1>ログインページ</h1>
-<p>Find me in app/views/accounts/login.html.erb</p>
+  <h4>ログイン</h4>
+  <hr>
+
+  <div class="validation-summary-valid" data-valmsg-summary="true">
+    <ul>
+      <li style="display: none;"></li>
+    </ul>
+  </div>
+
+  <!-- (1)ユーザー名 -->
+  <div class="form-group">
+    <label class="col-md-2 control-label" for="UserName">ユーザー名</label>
+
+    <div class="col-md-10">
+      <input name="UserName"
+         class="form-control valid"
+         id="UserName"
+         type="text"
+         value=""
+         data-val-required="ユーザー名 フィールドが必要です。"
+         data-val="true">
+    </div>
+  </div>
+
+  <!-- (2)パスワード -->
+  <div class="form-group">
+    <label class="col-md-2 control-label" for="Password">パスワード</label>
+
+    <div class="col-md-10">
+      <input name="Password"
+         class="form-control
+         input-validation-error"
+         id="Password"
+         type="password"
+         data-val-required="パスワード フィールドが必要です。"
+         data-val="true"
+         data-val-length-min="6"
+         data-val-length-max="100"
+         data-val-length="パスワード の長さは、6 文字以上である必要があります。">
+    </div>
+  </div>
