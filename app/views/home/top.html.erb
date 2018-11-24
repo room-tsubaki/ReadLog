@@ -179,345 +179,60 @@
     <!--Section: Products v.3-->
     <section class="text-center mb-4">
 
-      <!--Grid row-->
-      <div class="row wow fadeIn">
+      <% @titles.size.times do |i|%>
 
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4">
+        <!--Grid row-->
+        <div class="row wow fadeIn">
 
-          <!--Card-->
-          <div class="card">
+          <% @titles[i].zip(@pic_paths[i]).each do |title, pic_path| %>
 
-            <!--Card image-->
-            <div class="view overlay">
-              <img src="/assets/pic1.jpg" class="card-img-top" alt="">
-              <a>
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-            <!--Card image-->
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4">
 
-            <!--Card content-->
-            <div class="card-body text-center">
-              <!--Category & Title-->
-              <a href="" class="grey-text">
-                <h5>Books</h5>
-              </a>
-              <h5>
-                <strong>
-                  <a href="" class="dark-grey-text">プリズナートレーニング
-                    <span class="badge badge-pill danger-color">NEW</span>
+              <!--Card-->
+              <div class="card">
+
+                <!--Card image-->
+                <div class="view overlay">
+                  <img src=<%=pic_path%> class="card-img-top" alt="">
+                  <a>
+                    <div class="mask rgba-white-slight"></div>
                   </a>
-                </strong>
-              </h5>
+                </div>
+                <!--Card image-->
 
-              <h4 class="font-weight-bold blue-text">
-                <strong>120$</strong>
-              </h4>
-
-            </div>
-            <!--Card content-->
-
-          </div>
-          <!--Card-->
-
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4">
-
-          <!--Card-->
-          <div class="card">
-
-            <!--Card image-->
-            <div class="view overlay">
-              <img src="/assets/pic2.jpg" class="card-img-top" alt="">
-              <a>
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-            <!--Card image-->
-
-            <!--Card content-->
-            <div class="card-body text-center">
-              <!--Category & Title-->
-              <a href="" class="grey-text">
-                <h5>Books</h5>
-              </a>
-              <h5>
-                <strong>
-                  <a href="" class="dark-grey-text">日本国紀</a>
-                </strong>
-              </h5>
-
-              <h4 class="font-weight-bold blue-text">
-                <strong>139$</strong>
-              </h4>
-
-            </div>
-            <!--Card content-->
-
-          </div>
-          <!--Card-->
-
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4">
-
-          <!--Card-->
-          <div class="card">
-
-            <!--Card image-->
-            <div class="view overlay">
-              <img src="/assets/pic3.jpg" class="card-img-top" alt="">
-              <a>
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-            <!--Card image-->
-
-            <!--Card content-->
-            <div class="card-body text-center">
-              <!--Category & Title-->
-              <a href="" class="grey-text">
-                <h5>Books</h5>
-              </a>
-              <h5>
-                <strong>
-                  <a href="" class="dark-grey-text">医者が教える食事術 最強の教科書
-                    <span class="badge badge-pill primary-color">bestseller</span>
+                <!--Card content-->
+                <div class="card-body text-center">
+                  <!--Category & Title-->
+                  <a href="" class="grey-text">
+                    <h5>Books</h5>
                   </a>
-                </strong>
-              </h5>
+                  <h5>
+                    <strong>
+                      <a href="" class="dark-grey-text"><%=title%>
+                        <span class="badge badge-pill danger-color">NEW</span>
+                      </a>
+                    </strong>
+                  </h5>
 
-              <h4 class="font-weight-bold blue-text">
-                <strong>99$</strong>
-              </h4>
+                  <h4 class="font-weight-bold blue-text">
+                    <strong>120$</strong>
+                  </h4>
+
+                </div>
+                <!--Card content-->
+
+              </div>
+              <!--Card-->
 
             </div>
-            <!--Card content-->
+            <!--Grid column-->
 
-          </div>
-          <!--Card-->
+          <% end %>
 
         </div>
-        <!--Grid column-->
-
-        <!--Fourth column-->
-        <div class="col-lg-3 col-md-6 mb-4">
-
-          <!--Card-->
-          <div class="card">
-
-            <!--Card image-->
-            <div class="view overlay">
-              <img src="/assets/pic4.jpg" class="card-img-top" alt="">
-              <a>
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-            <!--Card image-->
-
-            <!--Card content-->
-            <div class="card-body text-center">
-              <!--Category & Title-->
-              <a href="" class="grey-text">
-                <h5>Books</h5>
-              </a>
-              <h5>
-                <strong>
-                  <a href="" class="dark-grey-text">欅坂46ファースト写真集『21人の未完成』</a>
-                </strong>
-              </h5>
-
-              <h4 class="font-weight-bold blue-text">
-                <strong>219$</strong>
-              </h4>
-
-            </div>
-            <!--Card content-->
-
-          </div>
-          <!--Card-->
-
-        </div>
-        <!--Fourth column-->
-
-      </div>
-      <!--Grid row-->
-
-      <!--Grid row-->
-      <div class="row wow fadeIn">
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4">
-
-          <!--Card-->
-          <div class="card">
-
-            <!--Card image-->
-            <div class="view overlay">
-              <img src="/assets/pic5.jpg" class="card-img-top" alt="">
-              <a>
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-            <!--Card image-->
-
-            <!--Card content-->
-            <div class="card-body text-center">
-              <!--Category & Title-->
-              <a href="" class="grey-text">
-                <h5>Books</h5>
-              </a>
-              <h5>
-                <strong>
-                  <a href="" class="dark-grey-text">岡靖知画集
-                    <span class="badge badge-pill danger-color">NEW</span>
-                  </a>
-                </strong>
-              </h5>
-
-              <h4 class="font-weight-bold blue-text">
-                <strong>120$</strong>
-              </h4>
-
-            </div>
-            <!--Card content-->
-
-          </div>
-          <!--Card-->
-
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4">
-
-          <!--Card-->
-          <div class="card">
-
-            <!--Card image-->
-            <div class="view overlay">
-              <img src="/assets/pic6.jpg" class="card-img-top" alt="">
-              <a>
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-            <!--Card image-->
-
-            <!--Card content-->
-            <div class="card-body text-center">
-              <!--Category & Title-->
-              <a href="" class="grey-text">
-                <h5>Books</h5>
-              </a>
-              <h5>
-                <strong>
-                  <a href="" class="dark-grey-text">年収1億円になる人の習慣</a>
-                </strong>
-              </h5>
-
-              <h4 class="font-weight-bold blue-text">
-                <strong>139$</strong>
-              </h4>
-
-            </div>
-            <!--Card content-->
-
-          </div>
-          <!--Card-->
-
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4">
-
-          <!--Card-->
-          <div class="card">
-
-            <!--Card image-->
-            <div class="view overlay">
-              <img src="/assets/pic7.jpg" class="card-img-top" alt="">
-              <a>
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-            <!--Card image-->
-
-            <!--Card content-->
-            <div class="card-body text-center">
-              <!--Category & Title-->
-              <a href="" class="grey-text">
-                <h5>Books</h5>
-              </a>
-              <h5>
-                <strong>
-                  <a href="" class="dark-grey-text">月星座パワーブック
-                    <span class="badge badge-pill primary-color">bestseller</span>
-                  </a>
-                </strong>
-              </h5>
-
-              <h4 class="font-weight-bold blue-text">
-                <strong>99$</strong>
-              </h4>
-
-            </div>
-            <!--Card content-->
-
-          </div>
-          <!--Card-->
-
-        </div>
-        <!--Grid column-->
-
-        <!--Fourth column-->
-        <div class="col-lg-3 col-md-6 mb-4">
-
-          <!--Card-->
-          <div class="card">
-
-            <!--Card image-->
-            <div class="view overlay">
-              <img src="/assets/pic8.jpg" class="card-img-top" alt="">
-              <a>
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-            <!--Card image-->
-
-            <!--Card content-->
-            <div class="card-body text-center">
-              <!--Category & Title-->
-              <a href="" class="grey-text">
-                <h5>Books</h5>
-              </a>
-              <h5>
-                <strong>
-                  <a href="" class="dark-grey-text">学びを結果に変えるアウトプット大全</a>
-                </strong>
-              </h5>
-
-              <h4 class="font-weight-bold blue-text">
-                <strong>219$</strong>
-              </h4>
-
-            </div>
-            <!--Card content-->
-
-          </div>
-          <!--Card-->
-
-        </div>
-        <!--Fourth column-->
-
-      </div>
-      <!--Grid row-->
+        <!--Grid row-->
+      <% end %>
 
     </section>
     <!--Section: Products v.3-->
