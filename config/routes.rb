@@ -1,13 +1,12 @@
 Rails.application.routes.draw do
 
-  get 'accounts/admin' => 'accounts#admin'
-  get 'accounts/new' => 'accounts#new'
-  get 'accounts/login' => 'accounts#login'
+  get 'users/:id' => 'users#show'
+  get 'users/:id/follow' => 'users#follow'
+  get 'users/signup' => 'users#signup'
+  get 'users/login' => 'users#login'
 
-  get 'posts/edit' => 'posts#edit'
-  get 'posts/index' => 'posts#index'
   get 'posts/new' => 'posts#new'
-  get 'posts/show' => 'posts#show'
+  get 'posts/edit' => 'posts#edit'
 
   get '/' => 'home#top'
 
