@@ -1,0 +1,107 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+header {
+  line-height: 60px;
+}
+.nav-link {
+  line-height: 15px;
+}
+.contents{
+  background-color: #fff;
+}
+
+.content{
+  display: inline-block;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.content:first-child{
+  border-right: 4px solid #d7e4ed;
+}
+
+.content h3{
+  font-size: 36px;
+  color: #47B39D;
+}
+
+.content p{
+  color: #47B39D;
+  margin-top: 6px;
+  margin-bottom: 40px;
+}
+
+.content a{
+  text-decoration: none;
+  background-color: #47B39D;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.modal-title {
+  font-weight: bold;
+  margin: 5px;
+  font-size: 35px;
+  color: #32CD32;
+}
+
+.form-body {
+  padding: 30px;
+}
+
+.form-error {
+  color: #ff4d75;
+}
+
+.modal-body input {
+  width: 100%;
+  border: 1px solid #d8dadf;
+  padding: 15px;
+  color: #57575f;
+  font-size: 16px;
+  letter-spacing: 2px;
+  border-radius: 2px;
+  margin-bottom: 15px;
+}
+
+.modal-body textarea {
+  width: 100%;
+  min-height: 110px;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.modal-body input[type="submit"] {
+  background-color: #3ecdc6;
+  color: white;
+  cursor: pointer;
+  font-weight: 300;
+  width: 120px;
+  border-radius: 2px;
+  margin-top: 8px;
+  margin-bottom: 0;
+  float: right;
+}
+
+.form-body:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.form-body p {
+  font-size: 23px;
+}
+
+.signup-btn {
+  padding: 8px 23px;
+  font-size: 23px;
+}
+
+.login-btn {
+  padding: 8px 23px;
+  font-size: 23px;
+}
