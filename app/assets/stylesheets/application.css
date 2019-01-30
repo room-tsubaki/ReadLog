@@ -10,6 +10,9 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *=require bootstrap_css/bootstrap.min.css
+ *=require vertical-timeline-css/reset.css
+ *=require vertical-timeline-css/style.css
  *= require_tree .
  *= require_self
  */
